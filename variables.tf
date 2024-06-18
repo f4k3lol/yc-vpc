@@ -3,5 +3,10 @@ variable "name" {
 }
 
 variable "subnets" {
-  type = map
+  type = map(any)
+}
+
+variable "external_addresses" {
+  type    = map(any)
+  default = {}
 }
